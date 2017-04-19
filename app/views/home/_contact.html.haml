@@ -1,0 +1,41 @@
+%section#contact.contact-section.section-padding
+  .container
+    %h2.section-title.wow.fadeInUp Get in touch
+    .row
+      .col-md-6
+        .contact-form
+          %strong Send me a message
+          #show_message
+          = form_tag(home_send_mail_path, remote: true) do
+            .form-group
+              = label_tag 'name'
+              = text_field_tag('name', '', id: 'name', class: 'form-control', required: true)
+            .form-group
+              = label_tag 'email'
+              = email_field_tag('email', '', id: 'email', class: 'form-control', required: true)
+            .form-group
+              = label_tag 'subject'
+              = text_field_tag('subject', '', id: 'subject', class: 'form-control', required: true)
+            .form-group
+              = label_tag 'message'
+              = text_area_tag('message', '',id: 'message', class: 'form-control', rows: 5, required: true)
+            = submit_tag('Send Message', class: 'btn btn-primary')
+      .col-md-6
+        .row.center-xs
+          .col-sm-6
+            %i.fa.fa-map-marker
+            %address
+              %strong Address/Street
+              340, 4th Avenue Street, HSR Layout 5th Sector,
+              %br/
+              Bengalore, India
+              %br/
+          .col-sm-6
+            %i.fa.fa-mobile
+            .contact-number
+              %strong Phone Number
+              +91 8553891591
+        .row
+          .col-sm-12
+            .location-map
+              #mapCanvas.map-canvas

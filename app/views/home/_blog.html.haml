@@ -1,0 +1,78 @@
+%section#blog.latest-blog-section.section-padding
+  .container
+    %h2.section-title.wow.fadeInUp Latest Post
+    .row
+      .col-sm-4
+        %article.blog-post-wrapper
+          .figure
+            .post-thumbnail
+              %a{:href => "#"}
+                = image_tag('blog/01.jpg', height: '180px', class: 'img-responsive')
+            %i.fa.fa-file-photo-o
+          %header.entry-header
+            .post-meta
+              %span.the-category
+                %a{:href => "#"} Ruby on Rails
+            %h2.entry-title
+              %a{:href => "#", :rel => ""} Use omniauth to authorize with fb,github and other social web.
+            %hr/
+            .entry-meta
+              %ul.list-inline
+                %li
+                  %span.the-author
+                    %a{:href => "#"} Admin
+                %li
+                  %span.the-time
+                    %a{:href => "#"} 06 Jan 2015
+      .col-sm-4
+        %article.blog-post-wrapper
+          .figure
+            .post-thumbnail
+              %a{:href => "#"}
+                = image_tag('blog/02.jpg', height: '200px', class: 'img-responsive')
+            %i.fa.fa-file-video-o
+          %header.entry-header
+            .post-meta
+              %span.the-category
+                %a{:href => "#"} Ruby on rails
+            %h2.entry-title
+              %a{:href => "#", :rel => ""} Use paprclip gem to upload image.
+            %hr/
+            .entry-meta
+              %ul.list-inline
+                %li
+                  %span.the-author
+                    %a{:href => "#"} Admin
+                %li
+                  %span.the-time
+                    %a{:href => "#"} 06 Jan 2015
+      .col-sm-4
+        %article.blog-post-wrapper
+          .figure
+            .post-thumbnail
+              %a{:href => "#"}
+                = image_tag('blog/03.jpg', height: '200px', class: 'img-responsive')
+            %i.fa.fa-quote-left
+          %header.entry-header
+            .post-meta
+              %span.the-category
+                %a{:href => "#"} Ruby on Rails
+            %h2.entry-title
+              %a{:href => "#", :rel => ""} Create shopping cart for e-website.
+            %hr/
+            .entry-meta
+              %ul.list-inline
+                %li
+                  %span.the-author
+                    %a{:href => "#"} Admin
+                %li
+                  %span.the-time
+                    %a{:href => "#"} 06 Jan 2015
+                %li
+                  %span.the-share
+                    %a{:href => "#", :title => "share"} 30
+                %li
+                  %span.the-comments
+                    %a{:href => "#", :title => ""} 05
+    .blog-more.text-center
+      %a.btn.btn-primary{:href => "#"} View More

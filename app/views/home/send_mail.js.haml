@@ -1,0 +1,4 @@
+- if @error.present?
+  $("#show_message").html("#{ escape_javascript(error_message(@error).html_safe)}");
+- else
+  $("#show_message").html("#{ escape_javascript(success_for('Successfully Sent.').html_safe)}");
