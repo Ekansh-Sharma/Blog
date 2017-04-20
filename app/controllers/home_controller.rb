@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   def send_mail
     begin
-      @user = User.new(safe_params)
+      @user = UserMail.new(safe_params)
       UserMailer.send_message(@user).deliver
     rescue => e
       @error = e.message
