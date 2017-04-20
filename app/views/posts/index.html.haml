@@ -1,0 +1,28 @@
+#posts
+  .container
+    .row.main
+      .panel-heading
+        .panel-title.text-center
+          %h1.title Ekansh's Blog
+          %hr/
+      .main-login.main-center
+        %form.form-horizontal{:action => "#", :method => "post"}
+          .form-group
+            %label.cols-sm-2.control-label{:for => "email"} Your Email
+            .cols-sm-10
+              .input-group
+                %span.input-group-addon
+                  %i.fa.fa-envelope.fa{"aria-hidden" => "true"}
+                %input#email.form-control{:name => "email", :placeholder => "Enter your Email", :type => "text"}/
+
+          .form-group
+            %label.cols-sm-2.control-label{:for => "password"} Password
+            .cols-sm-10
+              .input-group
+                %span.input-group-addon
+                  %i.fa.fa-lock.fa-lg{"aria-hidden" => "true"}
+                %input#password.form-control{:name => "password", :placeholder => "Enter your Password", :type => "password"}/
+
+          .form-group
+            %button.btn.btn-primary.btn-lg.btn-block.login-button{:type => "button"} Login
+

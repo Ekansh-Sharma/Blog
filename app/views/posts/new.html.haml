@@ -1,0 +1,17 @@
+.container
+  .col-md-12
+    .form-area
+      = form_tag('/posts') do
+        %br{:style => "clear:both"}/
+        %h3{:style => "margin-bottom: 25px; text-align: center;"} Create Blog
+        .form-group
+          = text_field_tag('post[category]','',placeholder: 'Category', required: true, class: 'form-control', id: 'name')
+        .form-group
+          = text_field_tag('post[email]','',placeholder: 'Email', required: true, class: 'form-control', id: 'email')
+        .form-group
+          = text_field_tag('post[mobile]','',placeholder: 'Mobile', required: true, class: 'form-control', id: 'mobile')
+        .form-group
+          = text_field_tag('post[title]','',placeholder: 'Title', required: true, class: 'form-control', id: 'title')
+        .form-group
+          = text_area_tag('post[message]','',placeholder: 'Message', required: true, class: 'form-control', id: 'message', rows: "7")
+        = submit_tag('Submit Form', class: 'btn btn-primary center-block', id: 'submit')
